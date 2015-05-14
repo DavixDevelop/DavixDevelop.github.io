@@ -1,0 +1,8 @@
+
+a.nav{text-decoration:none; color:white; background-color:#3b60cb;}
+#footer {background:#3b60cb;text-align: right;color:white;position:fixed; bottom:0;width:100%;height:60px;}
+body {margin: 0; padding: 0; height:100%;}
+.div {margin: 0; padding: 0;}
+#container{position:relative; min-height:100%;height:auto !important;height: 100%;}
+#header {background:#3b60cb; padding:10px;}
+#body {padding:10px; padding-bottom:60px;}
