@@ -22,9 +22,6 @@ div > p {
     font-family:Tahoma;
 }
 #S_Container {
-    position:fixed;
-	top:50px;
-	right:20px;
     float:right;
 }
 @media only screen and (max-device-width: 480px) and (orientation: portrait) {
@@ -47,6 +44,10 @@ table#bodyi td {border-left:solid 2px #eeeeee;}
 #body {padding:10px; padding-bottom:150px;}
 #navimg {width:0px;}
 #pimg {width:0px;}
+div > p { 
+    font-family:Tahoma;
+	font-size:20px;
+}
 }
 @media only screen and (max-device-width: 850px) and (orientation: landscape) {
 a.nav{text-decoration:none; color:white; background-color:#666666;font-size:40px;font-family:Tahoma;}
