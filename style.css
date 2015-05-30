@@ -48,7 +48,7 @@ div > p {
     font-family:Tahoma;
 }
 h2{
-    font-size:20px;
+    font-size:50px;
 }
 }
 @media only screen and (max-device-width: 850px) and (orientation: landscape) {
