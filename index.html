@@ -18,6 +18,13 @@
             color: black;
         }		
 	</style>
+	<script language="JavaScript">
+        var frmvalidator  = new Validator("contactform");
+        frmvalidator.addValidation("name","req","Please provide your name");
+        frmvalidator.addValidation("email","req","Please provide your email");
+        frmvalidator.addValidation("email","email",
+        "Please enter a valid email address");
+    </script>
 </head>
 <body>
     <div id="container">
@@ -32,26 +39,19 @@
 	        </table>
         </div>
         <div id="body">
-		    <div>
-			    <p>Welcome to my projects page. Here you can view my projects, add new app or program ideas and be notified about new projects.</p>
-				
-			</div>
-            <div id="S_Container">
-				    <form action="mailto:davidrupnik23@gmail.?Subject=Projects%20Ideas" method="GET">
-					    <ul>
-						    <li>
-							    <h2 style="text-align:right;color:white;font-family:Tahoma;">Send New Ideas</h2>
-							</li>
-						    <li>
-							    <label style="font-family:Tahoma;color:white;" for="body">Message:</label>
-							    <textarea  cols="50" name="body"></textarea>
-							</li>
-							<li>
-		                        <input type="submit" value="Send" style="float:right;" />
-							</li>
-						</ul>
+			<div class="content">
+                <div class="cell">
+                    <p id="WPP">Welcome to my projects page. Here you can view my projects and send mew new app or program ideas.</p>
+                </div>
+                <div class="gutter"></div>
+                <div id="contact" style="float:right;background:#aaaaaa;border:none;" class="cell">
+				    <p style="text-shadow: 0 0 5px #f7f7f7;">Contact Me</p>
+                    <form action="MAILTO:davidrupnik23@gmail.com?subject=[DavixDevelop%20Q/A]" method="post" enctype="text/plain">
+                    <input type="text" name="Q:" value="Your question" size="50"><br><br>
+                    <input type="submit" value="Send">
                     </form>
-			</div>
+                </div>
+            </div>
 		</div>
 		
         <div id="footer">Copyright@DavixDevelop 2015  </div>
