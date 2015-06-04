@@ -1,0 +1,7 @@
+name:     Base URL 
+description: DavixDevelop Base URL
+
+safe:     true
+auto:     true
+server:   true
+baseurl:  /DavixDevelop
