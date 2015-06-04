@@ -2,8 +2,7 @@
 <html>
 <head>
     <title>DavixDevelop</title>
-	<base href="https://github.com/DavixDevelop/DavixDevelop.github.io/tree/master/">
-	<link rel="stylesheet" type="text/css" href="Style/style.css" >
+	<link rel="stylesheet" type="text/css" href="style.css" >
 	<link rel="shortcut icon" href="images/ICON.ico">
 	<style>
 	    *::selection {
@@ -19,6 +18,13 @@
             color: black;
         }		
 	</style>
+	<script language="JavaScript">
+        var frmvalidator  = new Validator("contactform");
+        frmvalidator.addValidation("name","req","Please provide your name");
+        frmvalidator.addValidation("email","req","Please provide your email");
+        frmvalidator.addValidation("email","email",
+        "Please enter a valid email address");
+    </script>
 </head>
 <body>
     <div id="container">
@@ -26,9 +32,9 @@
             <table id="main">
 	            <tr>
                     <td style="background-color:#666666;"><a class="nav" href="index.html" ><img src="images/DavixDevelop logo.png" alt="" id="navimg"></a></td>
-			        <td style="background-color:#666666; text-align:left;"><a class="nav" href="Projects/index.html">Projects</a></td>
-			        <td style="background-color:#666666; text-align:left;"><a class="nav" href="News/index.html">News</a></td>
-			        <td style="background-color:#666666; text-align:left;"><a class="nav" href="About/index.html" >About</a></td>
+			        <td style="background-color:#666666; text-align:left;"><a class="nav" href="Projects.html">Projects</a></td>
+			        <td style="background-color:#666666; text-align:left;"><a class="nav" href="News.html">News</a></td>
+			        <td style="background-color:#666666; text-align:left;"><a class="nav" href="About.html" >About</a></td>
 		        </tr>
 	        </table>
         </div>
