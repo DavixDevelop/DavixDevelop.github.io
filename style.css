@@ -19,6 +19,8 @@ div > p {
     float:left;
 	padding:10px; 
 	margin:10px;
+	width:320px;
+	height:213px;
 }
 #WPP {
     color:white;
@@ -55,8 +57,15 @@ border-radius: 5px; }
     width:30px;
 	padding: 10px;
 }
+#pf {
+    width:200px;
+	float:left;
+}
+#downloadb {
+	margin: 10px 0 0 0;
+}
 @media only screen and (max-device-width: 480px) and (orientation: portrait) {
-a.nav{text-decoration:none; color:white; background-color:#666666;font-size:64px;font-family:Tahoma;}
+a.nav{text-decoration:none; color:white; background-color:#666666;font-size:100px;font-family:Tahoma;}
 #footer {background:#666666;text-align: right;color:white;position:fixed; bottom:0;width:100%;height:150px; font-family:Tahoma; font-size:40px;}
 body {margin: 0; padding: 0; height:100%;background:Images/BCG.png;background-repeat: repeat-y;}
 .div {margin: 0; padding: 0;}
@@ -71,13 +80,38 @@ table#main tr { border: none; }
 #pimg {width:0px;}
 div > p { 
     font-family:Tahoma;
-	font-size:25px;
+	font-size:50px;
 }
 h2{
     font-size:50px;
 }
 p{
     font-size:25px;
+}
+#pf {
+    width:0px;
+	float:left;
+}
+#ci {
+    width:90px;
+	padding: 30px;
+}
+div > h3 {
+    font-size:60px;
+}
+#downloadb {
+    font-size:50px;
+	margin: 10px;
+}
+#TMI {
+    float:left;
+	padding:0px; 
+	margin:0px;
+	width:0px;
+	height:0px;
+}
+#contact {
+    display:none;
 }
 }
 @media only screen and (max-device-width: 850px) and (orientation: landscape) {
