@@ -4,7 +4,6 @@ a.nav{text-decoration:none; color:white; background-color:#666666;font-size:25px
 .div {margin: 0; padding: 0;}
 #container{position:relative; min-height:100%;height:auto !important;height: 100%;}
 p{color:white;}
-body {background-image: url(images/BCG.png); background-repeat: repeat;}
 table#main {width:auto; border-width:2px;border-collapse: seperate; border-spacing: 10px 0px; aling:right;table-layout: auto;}
 table#main tr { border: none; }
 #header {background:#666666; padding:10px;}
