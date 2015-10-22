@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>DavixDevelop</title>
+		<title>DavixDevelop | MP3 Tag Edit</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"  >
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="/font-awesome-4.4.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="js/bootstrap.js"></script>
 		<div class="navbar navbar-inverse navbar-fixed-top">
-			
 			<div class="container">
-				
-				<a href="index.htm" class="navbar-brand">DavixDevelop</a>
-				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse" >
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<div class="collapse navbar-collapse navHeaderCollapse" > <!-- Mobile container -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapsed"  > <!-- aria-expanded="false" aria-controls="navbarCollapsed" -->
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="/index.htm" class="navbar-brand">DavixDevelop</a>
+				</div>
+				<div id="navbarCollapsed" class="navbar-collapse collapse"   > <!-- Mobile container  aria-expanded="true" -->
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active" ><a href="index.htm">Home</a></li>
 						<li class="dropdown">
-							<a class="dropdown-toggle" href="index.htm" data-toggle="dropdown">Applications</a>
+							<a class="dropdown-toggle" data-toggle="dropdown">Applications <b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a href="/twitch-multifunction/">Twitch Multifunction</a></li>
 								<li><a href="/twitch-account-information/">Twitch Account Inforamtion</a></li>
@@ -35,5 +35,17 @@
 				</div>
 			</div>
 		</div>
+		<!-- container -->
+		<div class = "container">
+   
+		</div>
+		<!-- footer -->
+		<div class="navbar navbar-inverse navbar-fixed-bottom" style="margin-bottom:0px;padding-bottom:0px;">
+			<div class="container">
+				<p class="navbar-text">@ 2015 DavixDevelop</p>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="/js/bootstrap.js"></script>
 	</body>
 </html>
