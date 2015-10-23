@@ -1,11 +1,24 @@
 body {
     background-image: url(website-background.jpg);
 	padding-top: 70px;
-	padding-bottom: 20px;
+	padding-bottom: 0px;
 }
 .carousel-caption h3 {
 	color: #2f2f2f;
 }
 .carousel-caption p {
 	color: #2f2f2f;
+}
+#Carousel_Container{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+    height: 50px; /* .push must be the same height as .footer */
 }
