@@ -9,7 +9,7 @@ body {
 .carousel-caption p {
 	color: #2f2f2f;
 }
-#Carousel_Container{
+.carousel_container{
     padding-left: 0px;
     padding-right: 0px;
 }
