@@ -24,7 +24,9 @@ body {
     margin-left: auto;
 }
 .no_padding{
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
