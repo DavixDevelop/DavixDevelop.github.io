@@ -16,3 +16,15 @@ body {
 .transparent_bg{
     background-color: rgba(234, 255, 255, 0.6);
 }
+.carousel-caption{
+	padding-bottom: 20px;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+.no_padding{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
