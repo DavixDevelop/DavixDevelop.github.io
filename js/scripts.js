@@ -1,0 +1,1 @@
+document.getElementById("foother_text").innerHTML = "@ 2015 DavixDevelop | Site in development";

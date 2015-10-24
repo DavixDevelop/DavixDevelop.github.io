@@ -13,3 +13,6 @@ body {
     padding-left: 0px;
     padding-right: 0px;
 }
+.transparent_bg{
+    background-color: rgba(234, 255, 255, 0.6);
+}
