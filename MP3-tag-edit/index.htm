@@ -38,13 +38,49 @@
 		</div>
 		<!-- container -->
 		<div class = "container">
-   
+            <a href="#terms" data-toggle="modal" class="btn btn-primary">Read More</a>
 		</div>
 		<!-- footer -->
 		<div class="navbar navbar-inverse navbar-fixed-bottom" style="margin-bottom:0px;padding-bottom:0px;margin-top: 20px;">
 			<div class="container">
 				<p id="foother_text" class="navbar-text"></p>
 			</div>
+        </div>
+        <!-- Terms Div -->
+        <div class="modal fade" id="terms" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Terms of Service</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label >Terms of Service</label>
+                            <p id="term"></p>
+                            <!-- <textarea id="term" class="form-control" readonly></textarea> -->
+                        </div>
+                        <script>
+                            function readTextFile(file)
+                            {
+                                var rawFile = new XMLHttpRequest();
+                                rawFile.open("GET", "http://www.davixdevelop.com/MP3-tag-edit/Licence.txt", false);
+                                rawFile.onreadystatechange = function ()
+                                {
+                                    if(rawFile.readyState === 4)
+                                    {
+                                        if(rawFile.status === 200 || rawFile.status == 0)
+                                        {
+                                            var allText = rawFile.responseText;
+                                            document.getElementById("term").innerHTML = allText;
+                                        }
+                                    }
+                                }
+                                rawFile.send(null);
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="/js/bootstrap.js"></script>
