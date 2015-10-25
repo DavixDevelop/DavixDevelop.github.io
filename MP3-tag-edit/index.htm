@@ -54,29 +54,27 @@
                         <h4>Terms of Service</h4>
                     </div>
                     <div class="modal-body">
-                        <div class="form-group">
-                            <label >Terms of Service</label>
-                            <p id="term"></p>
-                            <!-- <textarea id="term" class="form-control" readonly></textarea> -->
-                        </div>
+                        <form role="form" action="https://github.com/DavixDevelop/DavixDevelop.github.io/raw/master/Twitch%20Multifunction/v%201.4.5.0/Twitch%20Multifunction.msi">
+                            <div class="form-group">
+                                <label >Terms of Service</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="15" id="term" class="form-control" readonly></textarea>
+                            </div>
+                            <button id="submit_btn" type="submit" class="btn btn-primary ">Download</button>
+                        </form>
                         <script>
-                            function readTextFile(file)
+                            function httpGet(theUrl)  //Get file data
                             {
-                                var rawFile = new XMLHttpRequest();
-                                rawFile.open("GET", "http://www.davixdevelop.com/MP3-tag-edit/Licence.txt", false);
-                                rawFile.onreadystatechange = function ()
-                                {
-                                    if(rawFile.readyState === 4)
-                                    {
-                                        if(rawFile.status === 200 || rawFile.status == 0)
-                                        {
-                                            var allText = rawFile.responseText;
-                                            document.getElementById("term").innerHTML = allText;
-                                        }
-                                    }
-                                }
-                                rawFile.send(null);
+                                var xmlHttp = new XMLHttpRequest();
+                                xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+                                xmlHttp.send( null );
+                                return xmlHttp.responseText;
                             }
+                            var sURL = "http://davixdevelop.com/MP3-tag-edit/Licence.txt";
+                            var text = httpGet(sURL);
+                            document.getElementById("term").innerHTML = text;
+                            
                         </script>
                     </div>
                 </div>
