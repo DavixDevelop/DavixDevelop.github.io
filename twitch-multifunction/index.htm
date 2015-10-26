@@ -48,36 +48,43 @@
 			</div>
         </div>
         <!-- Terms Div -->
+        <!-- Terms Div -->
         <div class="modal fade" id="terms" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4>Terms of Service</h4>
                     </div>
-                    <div class="modal-body">
-                        <form role="form" action="https://github.com/DavixDevelop/DavixDevelop.github.io/raw/master/Twitch%20Multifunction/v%201.4.5.0/Twitch%20Multifunction.msi">
+                    <form role="form" action="https://github.com/DavixDevelop/DavixDevelop.github.io/raw/master/Twitch%20Multifunction/v%201.4.5.0/Twitch%20Multifunction.msi">
+                        <div class="modal-body">
                             <div class="form-group">
                                 <label >Terms of Service</label>
                             </div>
                             <div class="form-group">
                                 <textarea rows="15" id="term" class="form-control" readonly></textarea>
                             </div>
-                            <button id="submit_btn" type="submit" class="btn btn-primary ">Download</button>
-                        </form>
-                        <script>
-                            function httpGet(theUrl)  //Get file data
-                            {
-                                var xmlHttp = new XMLHttpRequest();
-                                xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-                                xmlHttp.send( null );
-                                return xmlHttp.responseText;
-                            }
-                            var sURL = "http://davixdevelop.com/MP3-tag-edit/Licence.txt";
-                            var text = httpGet(sURL);
-                            document.getElementById("term").innerHTML = text;
                             
-                        </script>
-                    </div>
+                            
+                        
+                            <script>
+                                function httpGet(theUrl)  //Get file data
+                                {
+                                    var xmlHttp = new XMLHttpRequest();
+                                    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+                                    xmlHttp.send( null );
+                                    return xmlHttp.responseText;
+                                }
+                                var sURL = "http://davixdevelop.com/MP3-tag-edit/Licence.txt";
+                                var text = httpGet(sURL);
+                                document.getElementById("term").innerHTML = text;
+
+                            </script>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-warning" data-dismiss="modal">Cancel</a>
+                            <button id="submit_btn" type="submit" class="btn btn-primary ">Download</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
