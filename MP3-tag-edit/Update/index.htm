@@ -44,7 +44,34 @@
                     <div id="1" class="panel panel-defaults bottom-margin">
                         <div class="panel-body">
                             <div class="page-header">
-                                <h3>Discogs.com implication in work <small>Posted on 26.10.2015</small></h3>
+                                <h3 id="list_title"></h3><small>Posted on 26.10.2015</small>
+                            </div>
+                            <img class="featureImg" src="images/26.10.2015.jpg"/>
+                            <p>MP3 Tag Edit now only allows choosing a image art from your own images. I'm working on a update were the program will automatically list avaiable images from Discogs.com. You will also be able to turn off automatic searcing for the image. You will still be able to manually refresh the list. When you will click on a image a popup with all inforamtion avaiable will show and you will be able to choose which info to copy to the desired song.</p>
+                        </div>
+                    </div>
+                    <div id="2" class="panel panel-defaults bottom-margin">
+                        <div class="panel-body">
+                            <div class="page-header">
+                                <h3 id="list_title"></h3><small>Posted on 26.10.2015</small>
+                            </div>
+                            <img class="featureImg" src="images/26.10.2015.jpg"/>
+                            <p>MP3 Tag Edit now only allows choosing a image art from your own images. I'm working on a update were the program will automatically list avaiable images from Discogs.com. You will also be able to turn off automatic searcing for the image. You will still be able to manually refresh the list. When you will click on a image a popup with all inforamtion avaiable will show and you will be able to choose which info to copy to the desired song.</p>
+                        </div>
+                    </div>
+                    <div id="3" class="panel panel-defaults bottom-margin">
+                        <div class="panel-body">
+                            <div class="page-header">
+                                <h3 id="list_title"></h3><small>Posted on 26.10.2015</small>
+                            </div>
+                            <img class="featureImg" src="images/26.10.2015.jpg"/>
+                            <p>MP3 Tag Edit now only allows choosing a image art from your own images. I'm working on a update were the program will automatically list avaiable images from Discogs.com. You will also be able to turn off automatic searcing for the image. You will still be able to manually refresh the list. When you will click on a image a popup with all inforamtion avaiable will show and you will be able to choose which info to copy to the desired song.</p>
+                        </div>
+                    </div>
+                    <div id="4" class="panel panel-defaults bottom-margin">
+                        <div class="panel-body">
+                            <div class="page-header">
+                                <h3 id="list_title"></h3><small>Posted on 26.10.2015</small>
                             </div>
                             <img class="featureImg" src="images/26.10.2015.jpg"/>
                             <p>MP3 Tag Edit now only allows choosing a image art from your own images. I'm working on a update were the program will automatically list avaiable images from Discogs.com. You will also be able to turn off automatic searcing for the image. You will still be able to manually refresh the list. When you will click on a image a popup with all inforamtion avaiable will show and you will be able to choose which info to copy to the desired song.</p>
@@ -53,9 +80,9 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="list-group">
-                        <a href="#" class="list-group-item">
-                            <h4 id="list_title"></h4>
-                            <p id="list_body" class="text-muted"></p>
+                        <a href="#1" class="list-group-item active">
+                            <h4 id="list_title" class="list-group-item-heading"></h4>
+                            <p id="list_body" class="list-group-item-text"></p>
                             <script >
                                 function httpGet(theUrl)  //Get file data
                                 {
@@ -72,8 +99,16 @@
 
                             </script>
                         </a>
-                    </div>
+                    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js">
+                        $('div.list-group').find('a').click(function(){
+                            var $href = $(this).attr('href');
+                            var $anchor = $('#'+$href).offset();
+                            window.scrollTo($anchor.left,$anchor.top);
+                            return false;
+                        });
+                    </script>
                 </div>
+                
             </div>
         </div>
 		<!-- footer -->

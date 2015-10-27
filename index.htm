@@ -126,6 +126,23 @@
                 <p id="foother_text" class="text-muted"></p>
             </div>
         </div>
+        <!-- child of the body tag -->
+        <span id="top-link-block" class="hidden">
+            <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+                <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+            </a>
+        </span><!-- /top-link-block -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js">
+            // Only enable if the document has a long scroll bar
+            // Note the window height + offset
+            if ( ($(window).height() + 100) < $(document).height() ) {
+                $('#top-link-block').removeClass('hidden').affix({
+                    // how far to scroll down before link "slides" into view
+                    offset: {top:100}
+                });
+            }
+        </script>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="/js/bootstrap.js"></script>
         <script src="/js/scripts.js"></script>
