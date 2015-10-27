@@ -3,7 +3,7 @@
 	<head>
         <link href="/website-logo.ico" rel="shortcut icon">
 		<meta name="msvalidate.01" content="335884A4EF4C6AF15937AD225531D92C" />
-		<title>DavixDevelop | MP3 Tag Futire Update 1.1.0.0</title>
+		<title>DavixDevelop | MP3 Tag Future Update</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"  >
 		<link href="/css/bootstrap.min.css" rel="stylesheet">
 		<link href="/css/style.css" rel="stylesheet">
@@ -19,7 +19,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a href="index.htm" class="navbar-brand">DavixDevelop</a>
+					<a href="/index.htm" class="navbar-brand">DavixDevelop</a>
 				</div>
 				<div id="navbarCollapsed" class="navbar-collapse collapse"   > <!-- Mobile container  aria-expanded="true" -->
 					<ul class="nav navbar-nav navbar-right">
@@ -56,7 +56,7 @@
                         <a href="#" class="list-group-item">
                             <h4 id="list_title"></h4>
                             <p id="list_body" class="text-muted"></p>
-                            <script>
+                            <script >
                                 function httpGet(theUrl)  //Get file data
                                 {
                                     var xmlHttp = new XMLHttpRequest();
@@ -64,11 +64,11 @@
                                     xmlHttp.send( null );
                                     return xmlHttp.responseText;
                                 }
-                                var sURL = "http://davixdevelop.com/MP3-tag-edit/Latest.json";
+                                var sURL = "/MP3-tag-edit/Latest.json";
                                 var text = httpGet(sURL);
                                 var obj = JSON.parse(text);
-                                document.getElementById("list_title").innerHTML = text.listtitle;
-                                document.getElementById("list_body").innerHTML = text.listbody;
+                                document.getElementById("list_title").innerHTML = obj.listtitle;
+                                document.getElementById("list_body").innerHTML = obj.listbody;
 
                             </script>
                         </a>

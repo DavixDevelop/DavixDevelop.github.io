@@ -19,7 +19,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a href="index.htm" class="navbar-brand">DavixDevelop</a>
+					<a href="/index.htm" class="navbar-brand">DavixDevelop</a>
 				</div>
 				<div id="navbarCollapsed" class="navbar-collapse collapse"   > <!-- Mobile container  aria-expanded="true" -->
 					<ul class="nav navbar-nav navbar-right">
@@ -89,9 +89,24 @@
             </div>
             <div class="container no_padding">
                 <div class="jumbotron text-center">
-                        <h3><a href="#">MP3 Tag Edit Updated Coming Soon</a></h3>
-                        <p>MP3 Tag Edit now only allows choosing a image art from your own images. But in the future it will allow choosing album art from Discogs.com...</p>
+                        <h3><a id="list_title" href="MP3-tag-edit/Update/"></a></h3>
+                        <p id="list_body"></p>
                         <a href="MP3-tag-edit/Update/" class="btn btn-primary">Read More</a>
+                        <script >
+                            function httpGet(theUrl)  //Get file data
+                            {
+                                var xmlHttp = new XMLHttpRequest();
+                                xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+                                xmlHttp.send( null );
+                                return xmlHttp.responseText;
+                            }
+                            var sURL = "/MP3-tag-edit/Latest.json";
+                            var text = httpGet(sURL);
+                            var obj = JSON.parse(text);
+                            document.getElementById("list_title").innerHTML = obj.listtitle;
+                            document.getElementById("list_body").innerHTML = obj.listbody;
+
+                        </script>
                 </div>
             </div>
             <!-- Grid System
