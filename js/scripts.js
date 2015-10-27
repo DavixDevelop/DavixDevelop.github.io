@@ -1,4 +1,4 @@
-document.getElementById("foother_text").innerHTML = "@ 2015 DavixDevelop | Site in development";
+document.getElementById("foother_text").innerHTML = "@ 2015 DavixDevelop";
 
 function httpGetAsync(theUrl, callback)  //Get file data
 {
