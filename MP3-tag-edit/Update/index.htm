@@ -52,7 +52,27 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            <h4 id="list-title">Discogs.com implication in work</h4>
+                            <p id="list-body" class="text-muted"></p>
+                            <script>
+                                function httpGet(theUrl)  //Get file data
+                                {
+                                    var xmlHttp = new XMLHttpRequest();
+                                    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+                                    xmlHttp.send( null );
+                                    return xmlHttp.responseText;
+                                }
+                                var sURL = "http://davixdevelop.com/MP3-tag-edit/Latest.txt";
+                                var text = httpGet(sURL);
+                                var obj = JSON.parse(text);
+                                document.getElementById("list-title").innerHTML = text.list-title;
+                                document.getElementById("list-body").innerHTML = text.list-body;
+
+                            </script>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
