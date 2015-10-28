@@ -1,1 +1,4 @@
-Sitemap: http://www.davixdevelop.com/sitemap.xml
+User-agent: *
+Disallow:
+
+SITEMAP: http://www.davixdevelop.com/sitemap.xml
