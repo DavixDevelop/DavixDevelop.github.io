@@ -1,0 +1,1 @@
+sitemap: http://www.davixdevelop.com/sitemap.xml
