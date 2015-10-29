@@ -1,1 +1,1 @@
-<?php include /MP3-tag-edit/Update/index.htm ?>
+<?php echo 'Test PHP';?>
