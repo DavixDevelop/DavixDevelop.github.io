@@ -10,9 +10,18 @@
         <link href="/css/style.css" rel="stylesheet">
         <link href="http://davixdevelop.com/favicon.ico" type="image/x-icon" rel="shortcut icon">
         <link rel="stylesheet" href="/font-awesome-4.4.0/css/font-awesome.min.css">
+        <script src="/js/ads.js"></script> <!--AdBlock Test -->
         <script type="text/javascript" src="/js/google_analytics.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	</head>
 	<body>
+        <!-- AdBlock Popup --->
+        <div id="alert"></div>
+        <script>
+          if( window.canRunAds === undefined ){
+                $("#alert").load("/alert.htm");
+          }
+        </script>
         <div class="container">
             <div class="row">
                 <div class="md-lg-12">
