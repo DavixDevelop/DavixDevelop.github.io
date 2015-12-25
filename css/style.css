@@ -74,4 +74,8 @@ code {
   font-size: 80%;
 }
 
+textarea {
+   resize: none;
+}
+
 
