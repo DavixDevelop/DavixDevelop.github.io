@@ -42,6 +42,11 @@ body {
     width: 100%;
 }
 
+.updateImage{
+    margin-bottom: 15px;
+    width: 60%;
+}
+
 .bottom-margin{
     margin-bottom: 15px;
 }
