@@ -31,16 +31,19 @@
 		<!-- Navbar -->
         <div id="navbar"></div>
 		<!-- container -->
-		<div class = "container">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-9">
                     <div class="panel panel-defaults bottom-margin">
-                        <div class="panel-body">
+                        <div class="panel-heading">
                             <div class="page-header">
                                 <h3>MP3 Tag Editor - A fully free MP3 editor</h3><small>By DavixDevelop</small>
                             </div>
+                        </div>
+                        <div class="panel-body">
+
                             <img class="img-responsive featureImg" src="http://i.imgur.com/AjxMIYQ.png"  />
-                                <p>Welcome to the about page of my application <b>MP3 Tag Editor</b>. Here I'll explain to you the quick run down of fetures and function in the program. Here is a list of things I'll be talking to you about: </p>
+                                <p>Welcome to the about page of my application <b>MP3 Tag Editor</b>. Here I'll explain to you the quick run down of features and function's in the program. Here's a list of things I'll be talking to you about: </p>
                             <ul>
                                 <li>Opening files
                                     <ul>
@@ -61,82 +64,81 @@
                                 <h4><li>
                             Opening files
                                 </li></h4>
-                                <p>You can open one file, multiple files or a folder with the following steps.</p>
+                                <p>You can open one file or a folder with the following steps.</p>
                                 <ul>
                                     <li><h5>One file</h5></li
-                                        <p>To open one file go to <b>File/Open Song</b></p><img class="updateImage" src="http://i.imgur.com/t016WCE.png" />
-                                    
+                                        <p>To open one file go to <b>File/Open Song</b></p><img class="updateImage" src="http://i.imgur.com/msOmzFb.png" />
+
                                     <li><h5>Folder</h5></li><p>To open a folder click on the <b>Directory</b> button</p><img class="updateImage" src="http://i.imgur.com/t016WCE.png" />
                         </ul>
                     <h4><li>The drag and drop feature</li></h4>
-                            <p>You can drag and drop .mp3 or image files. When you drag and drop multiple images the last image by alphabetical order gets inmported.</p>
+                            <p>You can drag and drop .mp3 or image files. When you drag and drop multiple images the last image by alphabetical order gets imported.</p>
                             <img class="featureImg" src="http://i.imgur.com/1XctwcQ.png" />
                             <h4><li>Applying changes</li></h4>
                             <ul>
                                 <li><h5>Title, artist, album, genre, year</h5></li>
-                                <p>To choose the title, album, genre and year just type in the wished valuse into each text box.</p>
+                                <p>To choose the title, album, genre and year just type in the wished values into each text box.</p>
                                 <img class="updateImage" src="http://i.imgur.com/WC83f6Z.png" />
                                 <li><h5>Image Covers</h5></li>
-                                <p>To choose a image cover just click on the Open Image button or drag and drop a image.</p>
+                                <p>To choose a image cover just click on the Open Image button or drag and drop a image from you computer or from the web.</p>
                                 <img class="updateImage" src="http://i.imgur.com/tNLEdbD.png" />
                             </ul>
                             <h4><li>Playing songs</li></h4>
-                            <p>To play song press on the play button, to pause press the pause button. To switch between song press on the arrow buttons.</p>
+                            <p>To play song's, press on the play button, to pause press the pause button. To switch between song press on the arrow buttons.</p>
                             <img class="updateImage" src="http://i.imgur.com/OWku5WN.png" />
                             </ol>
                             <div
-                            
+
                         </div>
                     </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class=".col-xs-12 .col-sm-6 .col-md-8" ><p>Like what you see? Click on the download button or view the changelog.</p></div>
-                            <div class=".col-xs-6 .col-md-4"><a href="/MP3-tag-edit/Update" class="btn btn-info">View Updates</a>  <a href="#terms" data-toggle="modal" class="btn btn-primary">Download</a></div>
-                        </div>
-                    </div>
+
+                </div>
+                <div class="panel-footer">
+                    <div class=".col-xs-12 .col-sm-6 .col-md-8" ><p>Like what you see? Click on the download button or view the changelog.</p></div>
+                    <div class=".col-xs-6 .col-md-4"><a href="/MP3-tag-edit/Update" class="btn btn-info">View Updates</a>  <a href="#terms" id="download" data-toggle="modal" class="btn btn-primary">Download</a></div>
                 </div>
             </div>
-            
-		</div>
+
+        </div>
 		<!-- footer -->
         <div id="footer"></div> 
         <!-- Terms Div -->
         <div class="modal fade" id="terms" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4>Terms of Service</h4>
-                    </div>
-                    <form role="form" action="https://github.com/DavixDevelop/DavixDevelop.github.io/raw/master/MP3%20Tag%20Edit/Setup%20-%20MP3%20Tag%20Editor.msi">
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <textarea rows="15" id="term" class="form-control" readonly></textarea>
-                            </div>
-                            
-                            
-                        
-                            <script>
-                                function httpGet(theUrl)  //Get file data
-                                {
-                                    var xmlHttp = new XMLHttpRequest();
-                                    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-                                    xmlHttp.send( null );
-                                    return xmlHttp.responseText;
-                                }
-                                var sURL = "/MP3-tag-edit/Licence.txt";
-                                var text = httpGet(sURL);
-                                document.getElementById("term").innerHTML = text;
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Terms of Service</h4>
+                        </div>
+                        <form role="form" action="https://github.com/DavixDevelop/DavixDevelop.github.io/raw/master/MP3%20Tag%20Edit/Setup%20-%20MP3%20Tag%20Editor.msi">
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <textarea rows="15" id="term" class="form-control" readonly></textarea>
+                                </div>
 
-                            </script>
-                        </div>
-                        <div class="modal-footer">
-                            <a class="btn btn-warning" data-dismiss="modal">Cancel</a>
-                            <button id="submit_btn" type="submit" class="btn btn-primary ">Download</button>
-                        </div>
-                    </form>
+
+
+                                <script>
+                                    function httpGet(theUrl)  //Get file data
+                                    {
+                                        var xmlHttp = new XMLHttpRequest();
+                                        xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+                                        xmlHttp.send( null );
+                                        return xmlHttp.responseText;
+                                    }
+                                    var sURL = "/MP3-tag-edit/Licence.txt";
+                                    var text = httpGet(sURL);
+                                    document.getElementById("term").innerHTML = text;
+
+                                </script>
+                            </div>
+                            <div class="modal-footer">
+                                <a class="btn btn-warning" data-dismiss="modal">Cancel</a>
+                                <button id="submit_btn" type="submit" class="btn btn-primary ">Download</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
         <script src="/js/bootstrap.js"></script>
         <script src="/js/scripts.js"></script>
 	</body>
