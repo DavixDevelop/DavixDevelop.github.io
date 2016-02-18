@@ -36,17 +36,14 @@
 		<!-- container -->
         <div class="container">
             <div class="row">
-                <div class="col-lg-9" id="post4">
-                    <div id="1" class="panel panel-defaults bottom-margin">
+                <div class="col-lg-9" id="post5">
+                    <div class="panel panel-defaults bottom-margin">
                         <div class="panel-body">
                             <div class="page-header pull-center" >
-                                <h3 id="list_title"></h3><small>Posted on 1.2.2015</small>
+                                <h3>MP3 Tag Editor v2.1.1 Released</h3><small>Posted on 18.2.2016</small>
                             </div>
-                            <img class="featureImg" src="http://i.imgur.com/Foab1Qh.png"/>
-                            <p>This build from the last build includes a lot of performance and method changes. I opted to use more <i>Async</i> to improve the speed performance. I also made the code cleaner, especially the save method, as before I had to loop at least 2 times through the save method for the cover to be applied.  </p>
-                            <p>Now, when the program scan's a folder for .mp3 file, It checks every file for corruption and excludes the file if it detects a corrupted file. I also made it so that when you open a song and close the program, it reopens that file the next time you launch the program.</p>
-                            <p>Image opening has also been improved, as the program now only allows opening images with a 1:1 aspect ratio. If the image opened doesn't have a 1:1 aspect ratio, the program draws an overlay on top of the image container for 9 seconds, that indicates a non 1:1 aspect ratio image.</p>
-                            <p>Also I'm happy to announce that the development of MP3 Tag Editor for the Universal Windows Platform is in works. The app will be availablefor PC and phones and Continuum enabled at launch.</p>
+                            <img class="featureImg" src="http://i.imgur.com/74NP4FO.png"/>
+                            <p>In this built, I added proper image compression when opening and applying image covers. Album covers get's sized to a resolution of 500x500 and the Image Icon get's sized to a resolution of 100x100. But don't worry. These changes don't get applied to the original image source file. </p>
                         </div>
                         <div class="panel-footer">
                                 
@@ -63,18 +60,13 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="list-group">
-                        <a href="#post4" id="2" class="list-group-item active">
-                            <p id="list_body" class="list-group-item-text"></p>
-                            <script >
-                            function mycallback(data) {
-                                var obj = JSON.parse(data);
-                                document.getElementById("list_body").innerHTML = obj.listbody;
-                                document.getElementById("list_title").innerHTML = obj.listtitle;
-                                
-                            }
-                            var sURL = "/MP3-tag-edit/Latest.json";
-                            httpGetAsync(sURL, mycallback);
-                        </script>
+                        <a href="#post5" class="list-group-item active">
+                            <p class="list-group-item-text">Proper image compression and image cover applying...</p>
+                        </a>
+                    </div>
+                    <div class="list-group">
+                        <a href="#post4" class="list-group-item active">
+                            <p class="list-group-item-text">Code and performance changes...</p>
                         </a>
                     </div>
                     <div class="list-group">
@@ -92,8 +84,22 @@
                             <p class="list-group-item-text">MP3 Tag Edit now only allows choosing a image art from your own images. But in the future it will allow choosing album art from Discogs.com...</p>
                         </a>
                 </div></div>
+                <div class="col-lg-9" id="post4">
+                    <div id="4" class="panel panel-defaults bottom-margin">
+                        <div class="panel-body">
+                            <div class="page-header pull-center" >
+                                <h3>MP3 Tag Editor v2.0.9 Released</h3><small>Posted on 1.2.2016</small>
+                            </div>
+                            <img class="featureImg" src="http://i.imgur.com/Foab1Qh.png"/>
+                            <p>This build from the last build includes a lot of performance and method changes. I opted to use more <i>Async</i> to improve the speed performance. I also made the code cleaner, especially the save method, as before I had to loop at least 2 times through the save method for the cover to be applied.  </p>
+                            <p>Now, when the program scan's a folder for .mp3 file, It checks every file for corruption and excludes the file if it detects a corrupted file. I also made it so that when you open a song and close the program, it reopens that file the next time you launch the program.</p>
+                            <p>Image opening has also been improved, as the program now only allows opening images with a 1:1 aspect ratio. If the image opened doesn't have a 1:1 aspect ratio, the program draws an overlay on top of the image container for 9 seconds, that indicates a non 1:1 aspect ratio image.</p>
+                            <p>Also I'm happy to announce that the development of MP3 Tag Editor for the Universal Windows Platform is in works. The app will be availablefor PC and phones and Continuum enabled at launch.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-9" id="post3">
-                    <div id="1" class="panel panel-defaults bottom-margin">
+                    <div class="panel panel-defaults bottom-margin">
                         <div class="panel-body">
                             <div class="page-header pull-center" >
                                 <h3 >MP3 Tag Editor Express Your Self Update</h3><small>Posted on 23.1.2015</small>
@@ -107,7 +113,7 @@
                     </div>
                 </div>
                 <div class="col-lg-9" id="post2">
-                    <div id="2" class="panel panel-defaults bottom-margin">
+                    <div class="panel panel-defaults bottom-margin">
                         <div class="panel-body">
                             <div class="page-header">
                                 <h3>MP3 Tag Editor Update v1.2.2 released</h3><small>Posted on Posted on 14.1.2015</small>
@@ -118,7 +124,7 @@
                     </div>
                 </div>
                 <div class="col-lg-9" id="post1">
-                    <div id="2" class="panel panel-defaults bottom-margin">
+                    <div class="panel panel-defaults bottom-margin">
                         <div class="panel-body">
                             <div class="page-header">
                                 <h3>Discogs.com implication in work
