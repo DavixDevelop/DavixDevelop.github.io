@@ -1,5 +1,4 @@
-function httpGetAsync(theUrl, callback)  //Get file data
-{
+function httpGetAsync(theUrl, callback){
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() { 
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
