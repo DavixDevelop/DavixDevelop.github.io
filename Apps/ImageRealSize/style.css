@@ -1,0 +1,316 @@
+@font-face{
+    font-family: SegoeMDLAssets;
+    src: url(segmdl2.ttf);
+}
+
+body{
+    background-color: #2e2e2e;
+    color: white;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+}
+
+.popup{
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -200px;
+    border: 3px solid #373737;
+    border-radius: 5px;
+    width: 400px;
+    background-color: white;
+    padding: 5px;
+    height: 300px;
+    color: black;
+    
+}
+
+.dialog{
+    position: absolute;
+    bottom: 5px;
+    top: 5px;
+    z-index: 2;
+    background-color: white;
+}
+
+.popup p{
+    margin: 0px;
+    margin-top: 2px;
+}
+.popup input{
+    font-family: 'Open Sans', sans-serif;
+    width: 400px;
+    margin-top: 2px;
+    background-color: #d1d1d1;
+    border: 1px solid #b1b1b1;
+}
+
+.popup input:hover{
+    background-color: #b1b1b1;
+}
+.stack select{
+    display: inline-block;
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 2.5px;
+}
+
+.stack{
+    margin-top: 4px;
+    line-height: 20px;
+}
+.stack p{
+    display: inline-block;
+}
+
+#open_button{
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+#ok_button{
+    width: auto;
+    border-radius: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-top: 6px;
+    position: absolute;
+    right: 5px;
+    bottom: 2px;
+}
+#tutorial_button{
+    width: auto;
+    border-radius: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-top: 6px;
+    position: absolute;
+    right: 45px;
+    bottom: 2px;
+}
+
+.tutorial{
+    z-index: -1;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.tutorial h2{
+    margin: 0px;
+}
+.tutorial p{
+    margin: 0px;
+}
+.tutorial img{
+    float: right;
+    width: 200px;
+}
+.tutorial input{
+    margin-top: 8px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.stackpanel{
+    line-height: 30px;
+}
+.top-stack input{
+    background-color: transparent;
+    color: white;
+    font-family: SegoeMDLAssets;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-image: url(background-template.png);
+    background-position: -298px -2px;
+    height: 35.5px;
+    width: 35.5px;
+    border-radius: 39px;
+}
+
+.top-stack{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.bottom-stack{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 105px;
+    width: 105px;
+    background-image: url(bottom-stack-background.png);
+    background-repeat: no-repeat;
+    pointer-events: none;
+    
+}
+.bottom-stack:hover{
+    background-image: url(bottom-stack-background-hover.png);
+    background-repeat: no-repeat;
+}
+
+.bottom-stack input{
+    pointer-events: auto;
+    background-color: transparent;
+    color: white;
+    font-family: SegoeMDLAssets;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+}
+#top_button{
+    position: absolute;
+    top: 0px;
+    left: 35px;
+    background-image: url(background-template.png);
+    background-position: -150px -2px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+#top_button:hover{
+    background-position: -187px -2px;
+}
+#bottom_button{
+    position: absolute;
+    bottom: 0px;
+    left: 35px;
+    background-image: url(background-template.png);
+    background-position: -224px -2px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+#bottom_button:hover{
+    background-position: -261px -2px;
+}
+
+#left_button{
+    position: absolute;
+    left: 0px;
+    top: 35px;
+    background-image: url(background-template.png);
+    background-position: -2px -2px;
+    border-bottom-left-radius: 14px;
+    border-top-left-radius: 14px;
+}
+#left_button:hover{
+    background-position: -39px -2px;
+}
+#right_button{
+    position: absolute;
+    right: 0px;
+    top: 35px;
+    background-image: url(background-template.png);
+    background-position: -76px -2px;
+    border-bottom-right-radius: 14px;
+    border-top-right-radius: 14px;
+}
+#right_button:hover{
+    background-position: -113px -2px;
+}
+
+.bottom-stack input:hover{
+    color: yellow;
+    cursor: pointer;
+}
+
+.top-stack input:hover{
+    color: red;
+    cursor: pointer;
+    background-position: -335px -2px;
+}
+.fixed_hidden{
+    background-color: black;
+    z-index: -1;
+    height: 21cm;
+    width: 29.7cm;
+    top: 50%;
+    left: 50%;
+    margin-top: -10.5cm;
+    margin-left: -14.85cm;
+    position: fixed;
+}
+.fixed{
+    z-index: 0;
+    outline: 2px dotted white;
+    height: 21cm;
+    width: 29.7cm;
+    top: 50%;
+    left: 50%;
+    margin-top: -10.5cm;
+    margin-left: -14.85cm;
+    position: fixed;
+}
+.bottom-left{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    color: white;
+}
+.bottom-left p{
+    margin: 0px;
+    display: inline-block;
+}
+#merilo {
+    display: inline-block;
+    width: 1cm;
+    height: 0.5cm;
+    outline:  2px solid white;
+    margin-left: 5px;
+}
+#merilo p{
+    font-size: 0.3cm;
+    margin-top: -6px;
+    display: block;
+    text-align: center;
+    margin-bottom: -2px;
+}
+
+#OK3_Button{
+    position: absolute;
+    width: auto;
+    right: 6px;
+    bottom: 6px;
+}
+
+#image{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    -webkit-transform: translateY(100%) rotate(-90deg); /* Safari */
+    -moz-transform: translateY(100%) rotate(-90deg); /* Firefox 3.6 Firefox 4 */
+    /*-moz-transform-origin: right top; */
+    -ms-transform: translateY(100%) rotate(-90deg); /* IE9 */
+    -o-transform: translateY(100%) rotate(-90deg); /* Opera */
+    transform: translateY(100%) rotate(-90deg); /* W3C */  
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -o-transform-origin: top left;
+    transform-origin: top left;
+}
+
+.hint{
+    position: absolute;
+    bottom: 30px;
+    font-style: italic;
+    font-size: 12.7px;
+    color: darkred;
+    font-weight: bold;
+}
