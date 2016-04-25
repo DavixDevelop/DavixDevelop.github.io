@@ -13,6 +13,7 @@ body{
     right: 0px;
     bottom: 0px;
     top: 0px;
+    box-shadow: 0 0 50px #888888 inset;
 }
 
 .popup{
