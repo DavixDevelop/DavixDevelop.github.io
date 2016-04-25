@@ -13,6 +13,10 @@ body{
     right: 0px;
     bottom: 0px;
     top: 0px;
+    -webkit-box-shadow: 0 0 200px black inset;
+    -moz-box-shadow: 0 0 200px black inset;
+    -ms-box-shadow: 0 0 200px black inset;
+    box-shadow: 0 0 200px black inset;
 }
 
 .popup{
@@ -304,7 +308,7 @@ body{
     -ms-transform-origin: top left;
     -o-transform-origin: top left;
     transform-origin: top left;
-}
+    }
 
 .hint{
     position: absolute;
@@ -313,4 +317,97 @@ body{
     font-size: 12.7px;
     color: darkred;
     font-weight: bold;
+}
+.mobile_popup{
+    position: fixed;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    background-color: whitesmoke;
+    z-index: -5;
+}
+.mobile_popup p{
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #050505;
+}
+.mobile_popup span{
+    display: block;
+    font-family: SegoeMDLAssets;
+    font-size: 50px
+}
+.mobile_popup img{
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    padding-top: 30px;
+}
+.mobile_popup small {
+    color: dimgrey;
+    position: absolute;
+    right:5px;
+    bottom: 5px;
+}
+@media (min-width:0px) { 
+	/* smartphones, iPhone, portrait 480x320 phones */ 
+	.mobile_popup{
+        z-index: 5;
+        width: auto;
+        left: 0px;
+    }
+}
+
+@media (min-width:320px) { 
+	/* smartphones, iPhone, portrait 480x320 phones */ 
+	.mobile_popup{
+        z-index: 5;
+        width: auto;
+        left: 0px;
+    }
+}
+@media (min-width:481px) { 
+	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+	.mobile_popup{
+        z-index: 5;
+        width: auto;
+        left: 0px;
+    }
+}
+
+@media (min-width:641px) { 
+	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+	.mobile_popup{
+        z-index: -4;
+        width: 0px;
+        left:-100%;
+    }
+ }
+@media (min-width:961px) { 
+	/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+	.mobile_popup{
+        z-index: -4;
+        width: 0px;
+        left:-100%;
+    }
+}
+@media (min-width:1025px) { 
+	/* big landscape tablets, laptops, and desktops */
+	.mobile_popup{
+        z-index: -4;
+        width: 0px;
+        left:-100%;
+    }
+}
+@media (min-width:1281px) { 
+	/* hi-res laptops and desktops */
+	.mobile_popup{
+        z-index: -4;
+        width: 0px;
+        left:-100%;
+    }
 }
