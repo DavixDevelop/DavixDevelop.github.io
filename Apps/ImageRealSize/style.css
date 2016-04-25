@@ -16,6 +16,7 @@ body{
     -webkit-box-shadow: 0 0 200px black inset;
     -moz-box-shadow: 0 0 200px black inset;
     -ms-box-shadow: 0 0 200px black inset;
+    -o-box-shadow: 0 0 200px black inset;
     box-shadow: 0 0 200px black inset;
 }
 
