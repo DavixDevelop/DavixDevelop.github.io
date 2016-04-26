@@ -354,47 +354,62 @@ body{
     right:5px;
     bottom: 5px;
 }
+
 @media (min-width:0px) { 
 	/* smartphones, iPhone, portrait 480x320 phones */ 
-	#profileImage{
-		width: 90%;
-	}
+	.mobile_popup{
+        z-index: 5;
+        width: auto;
+        left: 0px;
+    }
 }
 
 @media (min-width:320px) { 
 	/* smartphones, iPhone, portrait 480x320 phones */ 
-	#profileImage{
-		width: 90%;
-	}
+	.mobile_popup{
+        z-index: 5;
+        width: auto;
+        left: 0px;
+    }
 }
 @media (min-width:481px) { 
 	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-	#profileImage{
-		width: 90%;
-	}
+	.mobile_popup{
+        z-index: 5;
+        width: auto;
+        left: 0px;
+    }
 }
 
 @media (min-width:641px) { 
 	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-	#profileImage{
-		width: 300px;
-	}
+	.mobile_popup{
+        z-index: -4;
+        width: 0px;
+        left:-100%;
+    }
  }
 @media (min-width:961px) { 
 	/* tablet, landscape iPad, lo-res laptops ands desktops */ 
-	#profileImage{
-		width: 300px;
-	}
+	.mobile_popup{
+        z-index: -4;
+        width: 0px;
+        left:-100%;
+    }
 }
 @media (min-width:1025px) { 
 	/* big landscape tablets, laptops, and desktops */
-	#profileImage{
-		width: 300px;
-	}
+	.mobile_popup{
+        z-index: -4;
+        width: 0px;
+        left:-100%;
+    }
 }
 @media (min-width:1281px) { 
 	/* hi-res laptops and desktops */
-	#profileImage{
-		width: 300px;
-	}
+	.mobile_popup{
+        z-index: -4;
+        width: 0px;
+        left:-100%;
+    }
 }
