@@ -29,13 +29,17 @@
                     <h2>Tutorial 2</h2>
                     <p><img src="control.png" />To navigate through the papers use the bottom right joystick.</p>
                     <p class="hint">#Hint: Make sure your paper can cover the screen of your monitor, as else this online app won't work.</p>
-                    <input type="button" value="Finish" id="OK3_Button" />
+                    <input type="button" value="Finish" id="OK3_Button" disabled="disabled" />
                 </div>
                 <div id="firstpage" class="dialog">
+                    <p>First choose the image:</p>
+                    <input style="margin-top:0px;" id="open_buttom" onchange="openFile(this)" type="file">
+                    <input type="button" value="Tutorial" id="tutorial_button" />
+                    <input type="button" value="OK" id="ok_button" disabled="disabled" />
                     <p>Desired poster width (cm):</p>
-                <input id="poster_width" type="number" />
+                <input disabled="disabled" id="poster_width" type="number" />
                 <p>Desired poster height (cm):</p>
-                <input id="poster_height" type="number" />
+                <input disabled="disabled" id="poster_height" type="number" />
                 <div class="stack">
                 <p>Select paper format</p>
                 <select id="format">
@@ -44,15 +48,17 @@
                     <option value="A6">A6</option>
                 </select>
                 </div>
-                <p style="font-size:14px;">Open Image:</p>
-                <input style="margin-top:0px;" id="open_buttom" onchange="openFile(this);" type="file">
-                    <input type="button" value="Tutorial" id="tutorial_button" />
-                    <input type="button" value="OK" id="ok_button" />
+                    <div class="stack stack-right">
+                        <p class="info">Paper size:</p>
+                        <p id="image_info" class="info" style="padding-left: 15px;">21x29.7cm</p>
+                        <p class="info" style="padding-left:15px;">Tiles:</p>
+                        <p class="info" style="padding-left:15px" id="tiles_info"></p>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <div class="fixed_hidden" id="format_paper" >
+        <div class="fixed_hidden" id="format_paper" >   	<!-- Paper Div -->
             <img id="image"/>
         </div>
         <div class="fixed">
@@ -86,9 +92,15 @@
                     var reader = new FileReader();
                     reader.onload = function (e) {
                         $('#image').attr('src', e.target.result);
+                        document.getElementById("poster_width").disabled = false;
+                        document.getElementById("poster_height").disabled = false;
+                        $("#image").css("width", "auto");
+                        $("#image").css("height", "auto");
+                        $("#image").css("left", 0 + "cm");
+                        $("#image").css("bottom", 0 + "cm");
                     };
                     reader.readAsDataURL(input.files[0]);
-                } 
+                }
             }
             
             document.onkeyup = function(e) { 
@@ -114,6 +126,8 @@
                 $("#bottom_buttons").fadeIn("show"); 
                 interval = 1;
             });
+            
         </script>
+        <div id="ppitest" style="width:1in;visible:hidden;padding:0px"></div>
     </body>
 </html>

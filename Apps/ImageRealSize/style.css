@@ -71,6 +71,17 @@ body{
     margin-top: 4px;
     line-height: 20px;
 }
+.stack-right{
+    margin-top: 15px;
+    right: 0px;
+    position: absolute;
+    
+}
+.info{
+    color: dimgray;
+    font-style: italic;
+    font-size: 14px;
+}
 .stack p{
     display: inline-block;
 }
