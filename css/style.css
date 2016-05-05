@@ -1,5 +1,8 @@
 .body {
-    background-image: url(website-background.jpg);
+    background-image: url(BackgroundPattern.gif);
+    background-color: #00396e;
+    background-size: 100px 100px;
+    background-repeat: repeat;
     height: 100%;
 	padding-top: 70px;
 	padding-bottom: 0px;
