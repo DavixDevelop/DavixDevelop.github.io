@@ -1,13 +1,16 @@
 .body {
-    background-image: url(BackgroundPattern.gif);
-    background-color: #00396e;
-    background-size: 100px 100px;
-    background-repeat: repeat;
     height: 100%;
 	padding-top: 70px;
 	padding-bottom: 0px;
     margin-bottom: 150px;
     width: 100%;
+    
+}
+::selection {
+  background: #0063bf; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #0063bf; /* Gecko Browsers */
 }
 .carousel-caption h3 {
 	color: #2f2f2f;
@@ -120,6 +123,10 @@ textarea {
 	#profileImage{
 		width: 90%;
 	}
+    .body{
+        background-image: radial-gradient(#005eb5,#00294c);
+        background-size: auto;
+    }
 }
 
 @media (min-width:320px) { 
@@ -127,12 +134,22 @@ textarea {
 	#profileImage{
 		width: 90%;
 	}
+    .body{
+        background-image: radial-gradient(#005eb5,#00294c);
+        background-size: auto;
+    }
 }
 @media (min-width:481px) { 
 	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
 	#profileImage{
 		width: 90%;
 	}
+    .body{
+        background-image: url(BackgroundPattern.gif);
+        background-color: #00396e;
+        background-size: 75px 75px;
+        background-repeat: repeat;
+    }
 }
 
 @media (min-width:641px) { 
@@ -140,24 +157,48 @@ textarea {
 	#profileImage{
 		width: 300px;
 	}
+    .body{
+        background-image: url(BackgroundPattern.gif);
+        background-color: #00396e;
+        background-size: 75px 75px;
+        background-repeat: repeat;
+    }
  }
 @media (min-width:961px) { 
 	/* tablet, landscape iPad, lo-res laptops ands desktops */ 
 	#profileImage{
 		width: 300px;
 	}
+    .body{
+        background-image: url(BackgroundPattern.gif);
+        background-color: #00396e;
+        background-size: 75px 75px;
+        background-repeat: repeat;
+    }
 }
 @media (min-width:1025px) { 
 	/* big landscape tablets, laptops, and desktops */
 	#profileImage{
 		width: 300px;
 	}
+    .body{
+        background-image: url(BackgroundPattern.gif);
+        background-color: #00396e;
+        background-size: 75px 75px;
+        background-repeat: repeat;
+    }
 }
 @media (min-width:1281px) { 
 	/* hi-res laptops and desktops */
 	#profileImage{
 		width: 300px;
 	}
+    .body{
+        background-image: url(BackgroundPattern.gif);
+        background-color: #00396e;
+        background-size: 75px 75px;
+        background-repeat: repeat;
+    }
 }
 
 
