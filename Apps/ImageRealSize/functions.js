@@ -1,5 +1,5 @@
 $(document).ready(function (e) {
-    var poster_h, poster_w, paper_h = 29.7, paper_w = 21, current_left, current_bottom, max_width_step, max_height_step, left = 0, bottom = 0;
+    var poster_h, poster_w, paper_h = 29.7, paper_w = 21, ppi, current_left, current_bottom, max_width_step, max_height_step, left = 0, bottom = 0;
     $("#expand_buttom").click(function () {
         if (document.getElementById("expand_buttom").value === "\uE73F") {
             if (document.exitFullscreen) {
@@ -120,8 +120,7 @@ $(document).ready(function (e) {
             document.getElementById("OK3_Button").disabled = true;
         }
         if ($("#poster_width").val() > 0 ) {
-            //var ppi = document.getElementById("ppitest").offsetWidth;
-            var ppi = 128;
+            ppi = document.getElementById("ppitest").offsetWidth
             var desinger_width = document.getElementById("poster_width").value; //in cm
             poster_w = desinger_width;
             desinger_width = (desinger_width * 0.39) * ppi;
@@ -154,8 +153,7 @@ $(document).ready(function (e) {
             document.getElementById("OK3_Button").disabled = true;
         }
         if ($("#poster_height").val() > 0) {
-            //var ppi = document.getElementById("ppitest").offsetWidth;
-            var ppi = 128;
+            ppi = document.getElementById("ppitest").offsetWidth;
             var desinger_height = document.getElementById("poster_height").value; //in cm
             poster_h = desinger_height;
             desinger_height = (desinger_height * 0.39) * ppi;
@@ -235,8 +233,7 @@ $(document).ready(function (e) {
         bottom = 0;
         current_left = 0;
         current_bottom = 0;
-        //var ppi = document.getElementById("ppitest").offsetWidth;
-        var ppi = 128;
+        ppi = document.getElementById("ppitest").offsetWidth;
         var desinger_width = document.getElementById("poster_width").value; //in cm
         poster_w = desinger_width;
         desinger_width = (desinger_width * 0.39) * ppi;
