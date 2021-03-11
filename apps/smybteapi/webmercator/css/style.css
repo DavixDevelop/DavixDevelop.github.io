@@ -1,0 +1,340 @@
+:root {
+	--primary-bg: #630049;
+	--primary-color: #c790b9;
+	--primary-text-color: #ffffff;
+
+	--secondary-bg: #90c7b9;
+	--secondary-darkened-bg: #5bad98;
+	--secondary-text-color: #000000;
+
+	--unselected-bg: #c79e90;
+
+	--popup-bg: #f7f7f7;
+	--popup-darkened-bg: #d6d6d6;
+
+	--primary-text-size: 17pt;
+}
+
+@font-face{
+    font-family: Roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face{
+	font-family: Roboto;
+	src: url(fonts/Roboto-Black.ttf);
+	font-weight: 900;
+}
+
+@font-face{
+	font-family: Roboto;
+	src: url(fonts/Roboto-BlackItalic.ttf);
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: Roboto;
+	src: url(fonts/Roboto-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face{
+	font-family: Roboto;
+	src: url(fonts/Roboto-BoldItalic.ttf);
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: Roboto;
+	src: url(fonts/Roboto-Italic.ttf);
+	font-style: italic;
+}
+
+@font-face{
+	font-family: Roboto;
+	src: url(fonts/Roboto-Light.ttf);
+	font-weight: 300;
+}
+
+@font-face{
+	font-family: Roboto;
+	src: url(fonts/Roboto-LightItalic.ttf);
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: Roboto;
+	src: url(fonts/Roboto-Medium.ttf);
+	font-weight: 500;
+}
+
+@font-face{
+	font-family: Roboto;
+	src: url(fonts/Roboto-MediumItalic.ttf);
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: Roboto;
+	src: url(fonts/Roboto-Thin.ttf);
+	font-weight: 100;
+}
+
+@font-face{
+	font-family: Roboto;
+	src: url(fonts/Roboto-ThinItalic.ttf);
+	font-weight: 100;
+	font-style: italic;
+}
+
+body {
+	font-family: Roboto;
+	font-size: var(--primary-text-size);
+	color: var(--primary-text-color);
+	position: relative;
+  	height: auto;
+  	min-height: 100% !important;
+	margin: 0pt;
+	background: radial-gradient(#c79e90, #90c7b9);
+}
+
+.widget-container {
+	display: flex;
+	align-items: flex-start;
+	padding: 20pt 0;
+}
+
+.popup-container {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 20pt 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	backdrop-filter: blur(9pt);
+}
+
+.popup {
+	width: 100%;
+	max-width: 150pt;
+	margin-top: 50pt;
+	padding: 15pt;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--popup-bg);
+
+	-moz-box-shadow: inset -1pt -1pt 1pt 0pt rgb(0 0 0 / 25%);
+   	-webkit-box-shadow: inset -1pt -1pt 1pt 0pt rgb(0 0 0 / 25%);
+   	box-shadow: inset -1pt -1pt 1pt 0pt rgb(0 0 0 / 25%);
+
+   	border-radius: 1.5pt;
+}
+
+.popup > p {
+	text-align: center;
+	color: var(--secondary-text-color);
+	font-weight: 100;
+	font-size: 14pt;
+	text-shadow: 1pt 1pt 1pt rgb(0 0 0 / 75%);
+}
+
+#zoom {
+	font-weight: bold;
+	font-size: 26pt;
+	margin: 0pt;
+
+}
+
+.zoom-widget {
+	width: 100%;
+	max-width: 360pt;
+	margin: auto;
+	padding: 20pt;
+
+	background-color: var(--primary-bg);
+	border-radius: 2pt;
+
+	-moz-box-shadow: inset 1pt 1pt 1pt 1pt rgb(0 0 0 / 25%);
+   	-webkit-box-shadow: inset 1pt 1pt 1pt 1pt rgb(0 0 0 / 25%);
+   	box-shadow: inset 1pt 1pt 1pt 1pt rgb(0 0 0 / 25%);
+}
+
+.input-group {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 5.5pt;
+}
+
+.input-group > input {
+	align-self: stretch;
+	flex-grow: 4;
+}
+
+.input-group > label {
+	font-weight: 100;
+	padding-right: 5pt;
+	text-shadow: 1pt 1pt 1pt rgb(0 0 0 / 75%);
+}
+
+.primary-button {
+	background-color: var(--secondary-bg);
+	color: var(--primary-text-color);
+
+	font-size: var(--primary-text-size);
+	font-family: Roboto;
+	font-weight: 200;
+
+	border-radius: 2.5pt;
+	border: unset;
+
+	margin-top: 5pt;
+
+	text-shadow: 1pt 1pt 1pt rgb(0 0 0 / 75%);
+}
+
+.primary-button:active {
+	background-color: var(--secondary-darkened-bg);
+	border: unset;
+}
+
+.secondary-button {
+	background-color: var(--popup-bg);
+	color: var(--secondary-text-color);
+
+	font-size: 16pt;
+	font-family: Roboto;
+	font-weight: 500;
+
+	border-radius: 2.5pt;
+	border: unset;
+
+	margin-top: 5pt;
+	padding: 3pt;
+
+	text-shadow: 1pt 1pt 1pt rgb(0 0 0 / 75%);
+
+	-moz-box-shadow: inset 0pt 0pt 2pt 0pt rgb(0 0 0 / 27%);
+   	-webkit-box-shadow: inset 0pt 0pt 2pt 0pt rgb(0 0 0 / 27%);
+   	box-shadow: inset 0pt 0pt 2pt 0pt rgb(0 0 0 / 27%);
+}
+
+.secondary-button:active {
+	background-color: var(--popup-darkened-bg);
+	border: unset;
+}
+
+.input-box {
+	font-size: var(--primary-text-size);
+	border-radius: 2.5pt;
+	border: unset;
+}
+
+form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+table {
+	width: 100%;
+	margin-top: 10pt;
+	border-collapse: collapse;
+}
+ 
+thead {
+	color: var(--secondary-text-color);
+	font-weight: 900;
+}
+
+.sel {
+	background-color: var(--unselected-bg);
+}
+
+thead > tr {
+	background-color: var(--secondary-bg);
+	text-shadow: 1pt 1pt 1pt rgb(0 0 0 / 75%);
+}
+
+table, th, td {
+  border-bottom: 2px solid var(--secondary-bg);
+}
+
+tbody > tr > th,td {
+	text-shadow: 1pt 1pt 1pt rgb(0 0 0 / 75%);
+}
+
+tbody > tr > th {
+	font-style: italic;
+}
+
+tbody > tr > td {
+	font-weight: 300;
+}
+
+tbody > tr {
+	-moz-box-shadow: 0pt 3pt 2pt 0pt rgb(0 0 0 / 27%);
+   	-webkit-box-shadow: 0pt 3pt 2pt 0pt rgb(0 0 0 / 27%);
+   	box-shadow: 0pt 3pt 2pt 0pt rgb(0 0 0 / 27%);
+   	background-color: var(--secondary-darkened-bg);
+}
+
+.credit-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding-top: 5.5pt;
+}
+
+.credit-div > p {
+	margin: 0pt;
+	padding-right: 5pt;
+	font-weight: 100;
+	font-size: 12pt;
+	align-self: flex-end;
+}
+
+.credit-div > img {
+	width: 15pt;
+	height: 15pt;
+	margin-right: 5pt;
+	-moz-box-shadow: 0pt 3pt 2pt 0pt rgb(0 0 0 / 27%);
+   	-webkit-box-shadow: 0pt 3pt 2pt 0pt rgb(0 0 0 / 27%);
+   	box-shadow: 0pt 3pt 2pt 0pt rgb(0 0 0 / 27%);
+   	align-self: flex-end;
+}
+
+.credit-div > a {
+	font-weight: bold;
+	font-size: 14pt;
+	font-style: italic;
+	color: transparent;
+	text-shadow: 0px 1pt 1pt rgba(255,255,255,0.5);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+}
+
+.credit-div > a:link {
+	background-color: #565656;
+}
+
+.credit-div > a:hover {
+	background-color: #bfbfbf;
+}
+
+.credit-div > a:active {
+	background-color: var(--primary-color);
+}
+
+.credit-div > a:active {
+	background-color: var(--secondary-text-color);
+}
