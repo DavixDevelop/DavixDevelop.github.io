@@ -183,7 +183,7 @@
 
             $( document ).ready(function() {
                 $.ajax({
-                    url: "https://smybteapi.thesmyler.fr/webmercator/resolution?latitude=0",
+                    url: "https://smybteapi.buildtheearth.net/webmercator/resolution?latitude=0",
                     dataType: "json",
                     success: function(data){
                         renderResoultion(data)
@@ -192,7 +192,7 @@
                 });
                 $("#lonForm").submit(function( event ) {
                   $.ajax({
-                    url: "https://smybteapi.thesmyler.fr/webmercator/resolution?latitude=" + $("#lon").val(),
+                    url: "https://smybteapi.buildtheearth.net/webmercator/resolution?latitude=" + $("#lon").val(),
                     dataType: "json",
                     success: function(data){
                         renderResoultion(data)
